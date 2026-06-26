@@ -54,7 +54,7 @@ ask_panel_password() {
 
 ask_domain() {
   local label="$1"
-  read -rp "Введите ${label} домен, например irk.lebrit.su: " DOMAIN
+  read -rp "Введите ${label} домен, например server.example.com: " DOMAIN
   DOMAIN="${DOMAIN// /}"
   [[ "$DOMAIN" =~ ^([A-Za-z0-9](-*[A-Za-z0-9])*\.)+[A-Za-z]{2,}$ ]] || die "Некорректный домен: $DOMAIN"
 }
