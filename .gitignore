@@ -1,0 +1,16 @@
+*.log
+*.tmp
+.env
+.env.*
+secrets/
+private/
+*.key
+*.pem
+*.crt
+*.csr
+*.p12
+*.pfx
+x-ui.db
+wgcf.json
+wgcf.xray.json
+warp-outbound.json
